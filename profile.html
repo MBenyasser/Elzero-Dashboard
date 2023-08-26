@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <!-- To Render All Elements Normally -->
+    <link rel="stylesheet" href="CSS/normaliz.css">
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <!-- Local Framework -->
+    <link rel="stylesheet" href="CSS/framework.css" />
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="CSS/master.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&#038;display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="page d-flex">
+        <!-- Start Sidebar -->
+        <div class="sidebar bg-white p-20 p-relative">
+            <h3 class="p-relative txt-c mt-0">Elzero</h3>
+            <ul>
+                <li>
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="index.html">
+                        <i class="fa-regular fa-chart-bar fa-fw"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="settings.html">
+                        <i class="fa-solid fa-gear fa-fw"></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="active d-flex align-center fs-14 c-black rad-6 p-10" href="profile.html">
+                        <i class="fa-regular fa-user fa-fw"></i>
+                        <span>Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="projects.html">
+                        <i class="fa-solid fa-diagram-project fa-fw"></i>
+                        <span>Projects</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="courses.html">
+                        <i class="fa-solid fa-graduation-cap fa-fw"></i>
+                        <span>Courses</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="friends.html">
+                        <i class="fa-regular fa-circle-user fa-fw"></i>
+                        <span>Friends</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="files.html">
+                        <i class="fa-regular fa-file fa-fw"></i>
+                        <span>Files</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="plans.html">
+                        <i class="fa-regular fa-credit-card fa-fw"></i>
+                        <span>Plans</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- End Sidebar -->
+        <div class="content w-full">
+            <!-- Start Head -->
+            <div class="head bg-white p-15 between-flex">
+                <div class="search p-relative">
+                    <input class="p-10" type="search" placeholder="Type A Keyword" />
+                </div>
+                <div class="icons d-flex align-center">
+                    <span class="notification p-relative">
+                        <i class="fa-regular fa-bell fa-lg"></i>
+                    </span>
+                    <img decoding="async" src="CSS/Images/avatar.png" alt="" />
+                </div>
+            </div>
+            <!-- End Head -->
+            <!-- Start Page Title -->
+            <h1 class="p-relative">Profile</h1>
+            <!-- End Page Title -->
+            <!-- Start Content -->
+            <div class="profile">
+                <div class="profile-widget p-20 bg-white rad-10 p-relative">
+                    <div class="section-1">
+                        <img src="CSS/Images/avatar.png" alt="">
+                        <span>Osama Elzero</span>
+                        <span>Level 20</span>
+                        <div class="level-exp">
+                            <div class="exp"></div>
+                        </div>
+                        <div class="rating">
+                            <i class="fa-solid fa-star c-orange fs-13"></i>
+                            <i class="fa-solid fa-star c-orange fs-13"></i>
+                            <i class="fa-solid fa-star c-orange fs-13"></i>
+                            <i class="fa-solid fa-star c-orange fs-13"></i>
+                            <i class="fa-solid fa-star c-orange fs-13"></i>
+                        </div>
+                        <div class="ratings-no">550 Ratings</div>
+                    </div>
+                    <div class="section-2">
+                        <div class="box">
+                            <div class="title c-grey">General Information</div>
+                            <div class="information">
+                                <div class="name piece"><span>Full Name:</span>Osama Mohamed</div>
+                                <div class="gender piece"><span>Gender:</span>Male</div>
+                                <div class="country piece"><span>Country:</span>Egypt</div>
+                            </div>
+                            <div class="box-button">
+                                <input type="checkbox" id="gen-info" checked>
+                                <div class="button btn-shape">
+                                    <label for="gen-info"></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="title c-grey">Personal Information</div>
+                            <div class="information">
+                                <div class="name piece"><span>Email:</span>o@nn.sa</div>
+                                <div class="gender piece"><span>Phone:</span>019123456789</div>
+                                <div class="country piece"><span>
+                                        Date Of Birth:</span>25/10/1982</div>
+                            </div>
+                            <div class="box-button">
+                                <input type="checkbox" id="per-info">
+                                <div class="button btn-shape">
+                                    <label for="per-info"></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="title c-grey">Job Information</div>
+                            <div class="information">
+                                <div class="name piece"><span>Title:</span>Full Stack Developer</div>
+                                <div class="gender piece"><span>
+                                        Programming Language:</span>Python</div>
+                                <div class="country piece"><span>
+                                        Years Of Experience:</span>+15</div>
+                            </div>
+                            <div class="box-button">
+                                <input type="checkbox" id="job-info" checked>
+                                <div class="button btn-shape">
+                                    <label for="job-info"></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="title c-grey">Billing Information</div>
+                            <div class="information">
+                                <div class="name piece"><span>Payment Method:</span>Paypal</div>
+                                <div class="gender piece"><span>Email:</span>email@website.com</div>
+                                <div class="country piece"><span>Subscription:</span>Monthly</div>
+                            </div>
+                            <div class="box-button">
+                                <input type="checkbox" id="billing-info">
+                                <div class="button btn-shape">
+                                    <label for="billing-info"></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-acitvites">
+                    <div class="my-skills p-20 bg-white rad-10 p-relative">
+                        <h2 class="mt-0 mb-25">My Skills</h2>
+                        <span class="fs-15 c-grey">Complete Skills List</span>
+                        <div class="row">
+                            <div class="box btn-shape">HTML</div>
+                            <div class="box btn-shape">Pugjs</div>
+                            <div class="box btn-shape">HAML</div>
+                        </div>
+                        <div class="row">
+                            <div class="box btn-shape">CSS</div>
+                            <div class="box btn-shape">SASS</div>
+                            <div class="box btn-shape">Stylus</div>
+                        </div>
+                        <div class="row">
+                            <div class="box btn-shape">JavaScript</div>
+                            <div class="box btn-shape">TypeScript</div>
+                        </div>
+                        <div class="row">
+                            <div class="box btn-shape">Vuejs</div>
+                            <div class="box btn-shape">Reactjs</div>
+                        </div>
+                        <div class="row">
+                            <div class="box btn-shape">Jest</div>
+                            <div class="box btn-shape">Jasmine</div>
+                        </div>
+                        <div class="row">
+                            <div class="box btn-shape">PHP</div>
+                            <div class="box btn-shape">Larvael</div>
+                        </div>
+                        <div class="row">
+                            <div class="box btn-shape">Python</div>
+                            <div class="box btn-shape">Django</div>
+                        </div>
+                    </div>
+                    <div class="latest-activites p-20 bg-white rad-10 p-relative">
+                        <h2 class="mt-0 mb-25">Lastest Activites</h2>
+                        <span class="fs-15 c-grey">Latest Activities Done By The User</span>
+                        <div class="row">
+                            <img src="CSS/Images/activity-01.png" alt="">
+                            <div class="text">
+                                <div class="l-info">
+                                    <span>Store</span>
+                                    <span>Bought The Mastering Python Course</span>
+                                </div>
+                                <div class="r-info">
+                                    <span>18:10</span>
+                                    <span>Yesterday</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <img src="CSS/Images/activity-02.png" alt="">
+                            <div class="text">
+                                <div class="l-info">
+                                    <span>Academy</span>
+                                    <span>Got The PHP Certificate</span>
+                                </div>
+                                <div class="r-info">
+                                    <span>16:05</span>
+                                    <span>Yesterday</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <img src="CSS/Images/activity-03.png" alt="">
+                            <div class="text">
+                                <div class="l-info">
+                                    <span>Badges</span>
+                                    <span>Unlocked The 10 Skills Badge</span>
+                                </div>
+                                <div class="r-info">
+                                    <span>18:05</span>
+                                    <span>Yesterday</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <img src="CSS/Images/activity-01.png" alt="">
+                            <div class="text">
+                                <div class="l-info">
+                                    <span>Store</span>
+                                    <span>Bought The Typescript Course</span>
+                                </div>
+                                <div class="r-info">
+                                    <span>12:05</span>
+                                    <span>Yesterday</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+</body>
