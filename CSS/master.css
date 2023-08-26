@@ -1651,11 +1651,22 @@ table tr td .rejected {
 
 /* End  Backup Manager Widget*/
 /* Start Profile Widget */
-.profile-widget {
-    width: 96%;
-    margin: 0 2%;
-    margin-bottom: 20px;
+.profile {
+    margin: 20px;
     display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.profile-widget {
+    display: flex;
+    width: 100%;
+}
+
+@media (max-width: 767px) {
+    .profile-widget {
+        flex-direction: column;
+    }
 }
 
 .profile-widget .section-1 {
@@ -1665,6 +1676,12 @@ table tr td .rejected {
     justify-content: center;
     width: 200px;
     padding: 10% 0;
+}
+
+@media (max-width: 767px) {
+    .profile-widget .section-1 {
+        width: 100%;
+    }
 }
 
 .profile-widget .section-1 img {
@@ -1760,6 +1777,14 @@ table tr td .rejected {
     flex: 1;
     border-left: solid 1px #eee;
     padding-left: 20px;
+}
+
+@media (max-width: 767px) {
+    .profile-widget .section-2 {
+        border-left: none;
+        padding-left: 0;
+
+    }
 }
 
 .profile-widget .section-2 .box {
@@ -1891,6 +1916,8 @@ table tr td .rejected {
 
 .skills-acitvites {
     display: flex;
+    width: 100%;
+    gap: 20px;
 }
 
 @media (max-width: 767px) {
@@ -1901,19 +1928,6 @@ table tr td .rejected {
 
 /* End Skills-Activites Section */
 /* Start My Skills Widget*/
-
-.my-skills {
-    margin: 0 2% 20px 2%;
-    width: calc(97% / 3);
-    min-width: 185px;
-}
-
-@media (max-width: 767px) {
-    .my-skills {
-        width: 96%;
-        margin: 0 2% 20px 2%;
-    }
-}
 
 .my-skills h2 {
     margin: 0;
@@ -1959,14 +1973,6 @@ table tr td .rejected {
 
 .latest-activites {
     flex: 1;
-    margin: 0 2% 20px 0;
-}
-
-@media (max-width: 767px) {
-    .latest-activites {
-        width: 96%;
-        margin: 0 2% 20px 2%;
-    }
 }
 
 .latest-activites h2 {
@@ -1983,6 +1989,12 @@ table tr td .rejected {
     align-items: center;
     gap: 15px;
     padding: 20px 10px;
+}
+
+@media (max-width: 767px) {
+    .latest-activites .row {
+        flex-direction: column;
+    }
 }
 
 .latest-activites .row:not(:last-child) {
@@ -2032,6 +2044,7 @@ table tr td .rejected {
     text-align: right;
     color: var(--grey-color);
     font-size: 12px;
+    margin-bottom: 10px;
 }
 
 .widget .section-1 span:nth-of-type(2) {
@@ -2087,6 +2100,14 @@ table tr td .rejected {
     padding: 20px 0;
 }
 
+@media (max-width: 767px) {
+    .widget .section-2 {
+        flex-direction: column;
+        row-gap: 7px;
+    }
+
+}
+
 .widget .section-2 .box {
     background-color: #eee;
     width: fit-content;
@@ -2111,6 +2132,14 @@ table tr td .rejected {
     justify-content: space-between;
     padding: 20px 0 10px 0;
     align-items: center;
+}
+
+@media (max-width: 767px) {
+    .widget .section-3 {
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
 }
 
 .widget .section-3 .bar {
@@ -2221,17 +2250,12 @@ table tr td .rejected {
 
 .courses-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    column-gap: 10px;
-    row-gap: 20px;
-    width: 100%;
-    padding: 20px;
-    min-height: 100vh;
-
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    margin: 20px;
 }
 
 .courses-container .course {
-    width: 350px;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -2248,12 +2272,6 @@ table tr td .rejected {
     -ms-transition: 0.3s;
     -o-transition: 0.3s;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-}
-
-@media (max-width: 970px) {
-    .courses-container .course {
-        width: 100%;
-    }
 }
 
 .courses-container .course:hover {
@@ -2356,6 +2374,7 @@ table tr td .rejected {
     position: relative;
     display: flex;
     align-items: center;
+    margin-left: 15px;
 }
 
 .courses-container .course .course-details span:nth-child(3)::before {
@@ -2373,16 +2392,20 @@ table tr td .rejected {
 
 .friends-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    column-gap: 10px;
-    row-gap: 20px;
-    width: 100%;
-    padding: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 20px;
 
 }
 
+@media (max-width: 500px) {
+    .friends-container {
+        grid-template-columns: repeat(auto-fill, minmax(195px, 1fr));
+
+    }
+}
+
 .friends-container .friend {
-    width: 350px;
     padding: 10px;
     border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -2574,6 +2597,12 @@ table tr td .rejected {
     align-items: center;
 }
 
+@media (max-width:400px) {
+    .friends-container .friend .section-3 {
+        flex-direction: column;
+    }
+}
+
 .friends-container .friend .section-3 span {
     display: inline-block;
     padding: 10px;
@@ -2643,17 +2672,18 @@ table tr td .rejected {
 
 .files-container {
     display: flex;
+    gap: 20px;
+    margin: 20px;
 }
 
 .files-holder {
-    width: 70%;
+    width: 75%;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    margin: 0 0 0 2%;
+    gap: 15px;
 }
 
 .files-holder .file {
-    margin: 0 15px 15px 0;
     padding: 10px 10px 0 10px;
     display: flex;
     flex-direction: column;
@@ -2729,10 +2759,9 @@ table tr td .rejected {
 }
 
 .file-statistics {
-    flex: 1;
-    margin-right: 2%;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-
+    min-width: 260px;
+    height: fit-content;
 }
 
 .file-statistics .box {
@@ -2802,7 +2831,7 @@ table tr td .rejected {
     background-color: var(--blue-color);
     color: white;
     width: fit-content;
-    margin: 10px auto;
+    margin: 15px auto 0;
     font-size: 14px;
     padding: 15px 15px;
 }
@@ -2814,6 +2843,24 @@ table tr td .rejected {
 .upload-btn:hover i {
     animation: for-war 0.8s linear alternate infinite;
     -webkit-animation: for-war 0.8s linear alternate infinite;
+}
+
+@media (max-width: 767px) {
+
+    .files-container {
+        flex-direction: column;
+    }
+
+    .files-container .files-holder {
+        order: 2;
+        width: 100%;
+    }
+
+    .file-statistics {
+        order: 1;
+        width: 100%;
+    }
+
 }
 
 /* End Files */
